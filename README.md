@@ -19,7 +19,7 @@ Dilengkapi dengan daftar surat, jumlah ayat, progress bacaan, dan tampilan yang 
 
 ## 🚀 Demo
 
-> 🌍 **Live Preview:** [https://example.com](https://example.com)  
+> 🌍 **Live Preview:**  
 
 ---
 
