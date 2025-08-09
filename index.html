@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maqra - Ngaji Yuk | Baca Al-Qur'an Online Lengkap</title>
+  <meta name="description" content="Maqra - Ngaji Yuk. Aplikasi web untuk membaca Al-Qur'an secara online, lengkap dengan daftar surat, jumlah ayat, dan progress bacaan. Mari tingkatkan ibadah membaca Al-Qur'an bersama.">
+  <meta name="keywords" content="Maqra, ngaji, baca alquran, al-qur'an online, surat alquran, ngaji yuk, tilawah, juz amma, belajar quran">
+  <meta property="og:title" content="Maqra - Ngaji Yuk | Baca Al-Qur'an Online Lengkap">
+  <meta property="og:description" content="Baca Al-Qur'an online dengan Maqra. Pilih surat, lihat jumlah ayat, dan pantau progress bacaan Anda.">
+  <meta property="og:image" content="./assets/img/kakbah.png">
+  <meta property="og:type" content="website">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Maqra - Ngaji Yuk",
+    "url": "https://example.com",
+    "applicationCategory": "Religion & Spirituality",
+    "operatingSystem": "All",
+    "description": "Maqra adalah aplikasi web untuk membaca Al-Qur'an secara online, lengkap dengan daftar surat, jumlah ayat, dan progress bacaan.",
+    "image": "https://example.com/assets/img/kakbah.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Maqra Team"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IDR"
+    }
+  }
+  </script>
+  <link rel="icon" type="image/png" href="./assets/img/kakbah.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/select2.css">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-gradient-to-br from-green-50 to-emerald-50 min-h-screen flex flex-col items-center p-4">
+  <div class="w-full max-w-4xl bg-white rounded-2xl shadow-xl overflow-hidden border border-green-200">
+    <figure class="bg-gradient-to-r from-green-500 to-emerald-600 p-6">
+      <div class="text-center text-white">
+        <img src="./assets/img/kakbah.png" alt="Logo Maqra Aplikasi Ngaji Online" class="w-16 h-16 mx-auto mb-4">
+        <h1 class="text-3xl font-bold mb-2">📖 Maqra</h1>
+        <p class="text-green-100 text-sm">Mari membaca Al-Qur'an bersama</p>
+      </div>
+    </figure>
+    <div class="bg-green-50 p-6">
+      <h2 class="text-lg font-semibold text-green-800 mb-4 text-center">Perjalanan Membaca Al-Qur'an</h2>
+      <ul class="timeline timeline-horizontal overflow-x-auto">
+        <li>
+          <div class="timeline-start text-xs">Surat</div>
+          <div class="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 text-green-600">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16..." clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="timeline-end timeline-box text-xs bg-green-100">Pembukaan</div>
+          <hr class="bg-green-300"/>
+        </li>
+        <!-- ... (timeline lain tetap sama) ... -->
+      </ul>
+    </div>
+
+    <!-- Pilih Surat & Konten Ayat -->
+    <div class="p-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-1">
+          <div class="card bg-base-100 shadow-lg border border-green-200">
+            <div class="card-body p-4">
+              <h3 class="card-title text-green-700 text-lg mb-4">Pilih Surat Al-Qur'an</h3>
+              <div class="form-control mb-4">
+                <label class="label">
+                  <span class="label-text text-gray-700 font-medium">Daftar Surat</span>
+                </label>
+                <select id="surat" class="w-full" aria-label="Pilih Surat Al-Qur'an">
+                  <option value="">-- Pilih Surat --</option>
+                </select>
+              </div>
+              <div class="stats stats-vertical shadow bg-green-50 w-full">
+                <div class="stat py-2">
+                  <div class="stat-title text-xs">Ayat</div>
+                  <div class="stat-value text-lg text-green-600" id="currentAyat">-</div>
+                  <div class="stat-desc text-xs" id="totalAyat">dari -</div>
+                </div>
+                <div class="stat py-2">
+                  <div class="stat-title text-xs">Progress</div>
+                  <div class="stat-value text-lg text-green-600" id="progress">0%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <div id="ayat" class="min-h-[500px] space-y-4">
+            <div class="hero bg-green-50 rounded-2xl border-2 border-dashed border-green-200">
+              <div class="hero-content text-center">
+                <div class="max-w-md">
+                  <h2 class="text-2xl font-bold text-green-600 mb-4">🕌 Selamat Datang di Maqra</h2>
+                  <p class="text-green-500 font-medium mb-4">
+                    Pilih surat untuk mulai membaca Al-Qur'an
+                  </p>
+                  <div class="text-4xl mb-4">📖</div>
+                  <p class="text-sm text-gray-600">
+                    Mari mulai perjalanan spiritual kita dengan membaca firman Allah SWT secara online, praktis, dan gratis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/select2.js"></script>
+</body>
+</html>

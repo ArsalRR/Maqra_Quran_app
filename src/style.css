@@ -1,0 +1,14 @@
+  .select2-container .select2-selection--single {
+      height: 42px;
+      display: flex;
+      align-items: center;
+      border-radius: 0.5rem;
+      border: 1px solid #d1d5db;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+      height: 40px;
+    }
+      @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+    .font-arabic {
+      font-family: 'Amiri', serif;
+    }
