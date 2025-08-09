@@ -36,5 +36,5 @@ Dilengkapi dengan daftar surat, jumlah ayat, progress bacaan, dan tampilan yang 
 
 1. **Clone repositori**
    ```bash
-   git clone https://github.com/username/maqra.git
+   git clone https://github.com/ArsalRR/Maqra_Quran_app.git
    cd maqra
